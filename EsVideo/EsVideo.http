@@ -1,0 +1,6 @@
+@EsVideo_HostAddress = http://localhost:5118
+
+GET {{EsVideo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
