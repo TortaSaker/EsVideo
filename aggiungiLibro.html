@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi un libro</title>
+    <link rel="stylesheet" href="style/site.css">
+    <script defer src="script/site.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://localhost:7185/index.html" id="home-link">La Libreria del Vezzo</a>
+            <a href="https://localhost:7185/aggiungiLibro.html" id="add-book-link">Aggiungi un libro</a>
+            <a href="https://localhost:7185/rimuoviLibro.html" id="remove-book-link">Rimuovi un libro</a>
+            <a href="https://localhost:7185/cercaLibro.html" id="search-book-link">Cerca un libro</a>
+        </nav>
+    </header>
+    <div id="main-content">
+        <h2>Aggiungi un libro</h2>
+        <form id="add-book-form">
+            <label for="title">Titolo:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="author">Autore:</label><br>
+            <input type="text" id="author" name="author"><br>
+            <label for="isbn">ISBN:</label><br>
+            <input type="text" id="isbn" name="isbn"><br>
+            <label for="genre">Genere:</label><br>
+            <input type="text" id="genre" name="genre"><br>
+            <label for="year">Anno di pubblicazione:</label><br>
+            <input type="text" id="year" name="year"><br><br>
+            <button type="submit">Carica</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 La Libreria del Vezzo. Tutti i diritti riservati.</p>
+        <p>
+            <a href="https://localhost:7185/contatti.html">Contatti</a> |
+            <a href="https://localhost:7185/privacy.html">Privacy</a> |
+            <a href="https://localhost:7185/termini.html">Termini e condizioni</a>
+        </p>
+    </footer>
+</body>
+</html>

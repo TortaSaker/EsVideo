@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca un libro</title>
+    <link rel="stylesheet" href="style/site.css">
+    <script defer src="script/site.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://localhost:7185/index.html" id="home-link">La Libreria del Vezzo</a>
+            <a href="https://localhost:7185/aggiungiLibro.html" id="add-book-link">Aggiungi un libro</a>
+            <a href="https://localhost:7185/rimuoviLibro.html" id="remove-book-link">Rimuovi un libro</a>
+            <a href="https://localhost:7185/cercaLibro.html" id="search-book-link">Cerca un libro</a>
+        </nav>
+    </header>
+    <div id="main-content">
+        <h2>Cerca un libro</h2>
+        <form id="search-book-form">
+            <label for="search">Titolo o Autore:</label><br>
+            <input type="text" id="search" name="search"><br><br>
+            <button type="submit">Cerca</button>
+        </form>
+        <table id="book-table">
+            <!-- Risultati della ricerca -->
+        </table>
+    </div>
+    <footer style="position: fixed">
+        <p>&copy; 2024 La Libreria del Vezzo. Tutti i diritti riservati.</p>
+        <p>
+            <a href="https://localhost:7185/contatti.html">Contatti</a> |
+            <a href="https://localhost:7185/privacy.html">Privacy</a> |
+            <a href="https://localhost:7185/termini.html">Termini e condizioni</a>
+        </p>
+    </footer>
+</body>
+</html>

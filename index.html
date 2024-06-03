@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Libreria del Vezzo</title>
+    <link rel="stylesheet" href="style/site.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="script/site.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://localhost:7185/index.html" id="home-link">La Libreria del Vezzo</a>
+            <a href="https://localhost:7185/aggiungiLibro.html" id="add-book-link">Aggiungi un libro</a>
+            <a href="https://localhost:7185/rimuoviLibro.html" id="remove-book-link">Rimuovi un libro</a>
+            <a href="https://localhost:7185/cercaLibro.html" id="search-book-link">Cerca un libro</a>
+        </nav>
+    </header>
+    <div id="main-content">
+        <!-- Contenuto dinamico caricato qui -->
+        <h2>Benvenuti alla Libreria del Vezzo</h2>
+        <p>Usa la navbar per navigare tra le varie sezioni.</p>
+
+        <!-- Carosello di copertine di libri -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="item"><img src="https://m.media-amazon.com/images/I/71udMMHFpTL._SL1500_.jpg" alt="AK" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/61zA5n7kzVL._SL1500_.jpg" alt="DEC" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/715NyffsncL._SL1500_.jpg" alt="DBV" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/71SbstoztmL._SL1270_.jpg" alt="MD" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/71JW33-UT0L._SL1476_.jpg" alt="CICCIO" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/91DZB7vf4eL._SL1500_.jpg" alt="SHUSIR" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/819DKwQwqXL._SL1500_.jpg" alt="HPELPF" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/71RxDGtAfXL._SL1436_.jpg" alt="LOVE" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/71LUyrke4CL._SL1500_.jpg" alt="POE" /></div>
+                <div class="item"><img src="https://m.media-amazon.com/images/I/41O6sTvdC8L.jpg" alt="SUNTZU" /></div>
+            </div>
+            <!-- Aggiungi le frecce di navigazione -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <footer style="position: fixed">
+        <p>&copy; 2024 La Libreria del Vezzo. Tutti i diritti riservati.</p>
+        <p>
+            <a href="https://localhost:7185/contatti.html">Contatti</a> |
+            <a href="https://localhost:7185/privacy.html">Privacy</a> |
+            <a href="https://localhost:7185/termini.html">Termini e condizioni</a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 1,
+                spaceBetween: 10,
+                grabCursor: true,
+            });
+        });
+    </script>
+</body>
+</html>
